@@ -1,0 +1,29 @@
+1. Go through this program and write a comment above each line explaining it. - Done
+
+
+2. Find all the places where a string is put inside a string. - 4
+
+y = "Those who know #{binary} and those who #{do_not}."
+puts "I said: #{x}."  #value of x variable will be replayed with assigned string value - String within String
+puts "I also said: '#{y}'."  #value of y variable will be replayed with assigned string value and will be within single quotation - String within String
+
+
+3. Are you sure there are only four places? How do you know? Maybe I like lying.
+binary , do_not , x , y are the string variable which are put inside a string.
+
+4. Explain why adding the two strings w and e with + makes a longer string.
++ -> means Concatenate or merge which merge or concatenate two or more values
+
+5. What happens when you change the strings to use ' (single-quote) instead of " (double-quote)? Do they still work? Try to guess why.
+
+The main difference is that double-quoted String literals support string interpolations and the full set of escape sequences.
+
+In Ruby the " (double-quote) tells Ruby to replace variables it finds with #{}, but the ' (single-quote) tells Ruby to leave the string alone and ignore any variables inside it.
+
+binary1 = "binary" #binary is a variable and is assigned to a String as binary
+do_not = "don't" #do_not is a variable and is assigned to a string as don't
+y = '~Those who know "#{binary1}" and those who #{do_not}.'
+
+If I pass string into single quote then assigned variable value will not replaced , output will be as below
+
+~Those who know "#{binary1}" and those who #{do_not}.
